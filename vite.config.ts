@@ -5,7 +5,8 @@ const config: UserConfig = {
   jsx: "react",
   plugins: [reactPlugin],
   root: "src/",
-  outDir: "public/",
+  outDir: "dist/",
+  assetsDir: "asset/",
 };
 
 export default config;

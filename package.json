@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d build"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@pika/react": "^16.13.1",
