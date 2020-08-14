@@ -28,6 +28,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
+      - run: yarn to_dist
       - run: yarn build
 
       - name: Deploy
