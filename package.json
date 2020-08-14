@@ -8,8 +8,9 @@
     "esbuild": "esbuild --bundle src/main.tsx '--define:process.env.NODE_ENV=\"development\"' --target=es2016 --outdir=dist/assets --sourcemap",
     "type-check": "tsc --noEmit",
     "build": "run-s clean-pub type-check esbuild",
+    "to_dist": "cp public/* dist",
     "gh-pages": "gh-pages -d dist",
-    "deploy": "run-s build gh-pages"
+    "deploy": "run-s to_dist build gh-pages"
   },
   "dependencies": {
     "@pika/react": "^16.13.1",
