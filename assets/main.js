@@ -21395,9 +21395,14 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   // src/components/header/index.tsx
   const react2 = __toModule(require_react());
   const Container = styled_components_browser_esm_default.div``;
-  const Title = styled_components_browser_esm_default.h1``;
+  const Title = styled_components_browser_esm_default.h1`
+  text-align: center;
+`;
+  const Description = styled_components_browser_esm_default.p``;
   function Header() {
-    return /* @__PURE__ */ react2.default.createElement(Container, null, /* @__PURE__ */ react2.default.createElement(Title, null, "My name is hnkz."));
+    return /* @__PURE__ */ react2.default.createElement(Container, null, /* @__PURE__ */ react2.default.createElement(Title, null, "My name is hnkz."), /* @__PURE__ */ react2.default.createElement(Description, null, "Repository is", " ", /* @__PURE__ */ react2.default.createElement("a", {
+      href: "https://github.com/wan-nyan-wan/wan-nyan-wan.github.io/"
+    }, "here")));
   }
 
   // src/App.tsx
